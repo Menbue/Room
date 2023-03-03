@@ -1,0 +1,53 @@
+.advantages__container {
+    max-width: 1100px;
+}
+
+.advantages__title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 24px;
+}
+
+.advantages__btn {
+    font-size: 14px;
+    line-height: 12px;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    color: #46856E;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all .2s ease;
+    margin-bottom: 12px;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.advantages__grid {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 80px;
+}
+
+.advantages__column img {
+    margin-left: 55px;
+}
+
+.advantages__column__title {
+    text-align: start;
+    font-size: 24px;
+    line-height: 24px;
+    color: $primary;
+    margin: 26px 0 18px;
+}
+
+.advantages__column__text {
+    text-align: start;
+    font-size: 16px;
+    line-height: 24px;
+    color: $second;
+}
