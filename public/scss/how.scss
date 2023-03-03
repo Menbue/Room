@@ -1,0 +1,45 @@
+.how__container {
+    margin-top: 240px;
+    max-width: 1200px;
+}
+
+.how__text {
+    margin: 0 155px 25px;
+    font-size: 46px;
+    line-height: 52px;
+    color: $second;
+}
+
+.how__title {
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 52px;
+    color: #000000;
+    margin: 0 155px 135px;
+}
+
+.how__box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 64px;
+}
+
+.how__box__image {
+    max-width: 671px;
+}
+.how__box__content{
+    margin-left: 90px;
+    margin-right: 110px;
+}
+.how__box__title {
+    margin-bottom: 27px;
+    font-size: 32px;
+    line-height: 36px;
+    color: $primary;
+}
+
+.how__box__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: $second;
+}

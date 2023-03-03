@@ -1,0 +1,16 @@
+.examples__container {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin: 130px auto 32px;
+
+    & a {
+        text-decoration: none;
+        color: $primary;
+    }
+
+    & img {
+        width: 588px;
+    }
+}
