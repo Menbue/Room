@@ -25,7 +25,7 @@
 }
 
 .how__box__image {
-    max-width: 671px;
+    max-width: 50%;
 }
 .how__box__content{
     margin-left: 90px;
@@ -42,4 +42,28 @@
     font-size: 16px;
     line-height: 24px;
     color: $second;
+}
+
+@media (max-width: 991.99px){
+    .how__container{
+        margin: 80px 0;
+        min-width: 100%;
+        width: 100%;
+    }
+    .how__text{
+        margin: 0 20px 25px;
+        text-align: center;
+    }
+    .how__title{
+        margin: 0 40px 100px;
+    }
+    .how__box__content{
+        margin: 0 40px;
+    }
+    .how__box__title{
+        font-size: 44px;
+    }
+    .how__box__text{
+        font-size: 22px;
+    }
 }
