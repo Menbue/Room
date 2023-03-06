@@ -51,3 +51,31 @@
     line-height: 24px;
     color: $second;
 }
+
+@media (max-width: 991.99px) {
+    .advantages__grid {
+        margin-top: 0;
+        gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .advantages__column {
+        max-width: 550px;
+        text-align: center;
+
+        & img {
+            margin-left: 0;
+        }
+
+        &:nth-child(2) {
+            align-self: flex-end;
+        }
+    }
+
+    .advantages__column__text,
+    .advantages__column__title {
+        text-align: center;
+    }
+}
