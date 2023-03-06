@@ -1,0 +1,44 @@
+@import "node_modules/swiper/swiper";
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+.slider__container {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 90px;
+}
+
+.swiper__slider {
+    margin: 0 48px;
+}
+
+.swiper-wrapper {
+    margin-bottom: 30px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-pagination span {
+    background-color: #46856E;
+}
+
+.swiper-horizontal {
+    bottom: var(--swiper-pagination-bottom, -20px);
+}
+
+.swiper-button-prev::after {
+    margin-left: 56px;
+}
+
+.swiper-button-next::after {
+    margin-right: 56px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    color: rgb(255, 255, 255);
+}

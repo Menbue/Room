@@ -1,0 +1,35 @@
+.brands__container {
+    max-width: 1090px;
+    margin-top: 215px;
+    text-align: center;
+}
+
+.brands__title {
+    color: $primary;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 48px;
+}
+
+.brands__text {
+    color: #4A4A4A;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 125px;
+}
+
+.brands__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+
+    & img{
+        margin-bottom: 49px;
+        transition: all 0.24s linear;
+
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}

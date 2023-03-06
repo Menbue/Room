@@ -1,0 +1,30 @@
+.examples__container {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin: 130px auto 32px;
+    justify-content: center;
+
+    & a {
+        text-decoration: none;
+        color: $primary;
+    }
+
+    & img {
+        max-width: 588px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .examples__container {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: auto;
+
+        img {
+            max-width: 100%;
+
+        }
+    }
+}
