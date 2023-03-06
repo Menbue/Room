@@ -50,8 +50,9 @@
 }
 
 .footer__social__block img {
+    transition: all .2s linear;
     &:hover {
-        background-color: #ffffff;
+        transform: scale(1.1);
     }
 }
 
@@ -91,11 +92,11 @@ label {
     color: #ffffff;
 }
 
-.form__choice {
+.form__select {
     margin: 16px 0 56px;
-    width: 104px;
+    width: 120px;
     align-self: end;
-    background-color: transparent;
+    background-color: #2B2B2B;
     border: none;
     cursor: pointer;
     font-size: 14px;
@@ -126,14 +127,50 @@ label {
     }
 }
 
-// .custom__checkbox {
-//     font-size: 11px;
-//     line-height: 13px;
-//     letter-spacing: 2.4px;
-//     text-transform: uppercase;
+.form__check {
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+}
 
-//     color: rgba(255, 255, 255, 0.5);
-// }
+.custom__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    
+    &:checked+label::before {
+        background-color: #ffffff;
+        background-image: url(/public/img/footer/checkbox.svg);
+      }
+
+      &:focus+label::before {
+        box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.25);
+      }
+}
+
+.custom__checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 28px;
+        height: 26px;
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        top: 0;
+        left: -50px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50% 50%;
+    }
+
+}
 
 .form__btn {
     color: #FFFFFF;
@@ -147,7 +184,7 @@ label {
     cursor: pointer;
     transition: all .2s linear;
 
-    &:hover{
+    &:hover {
         color: #AAAAAA;
     }
 }

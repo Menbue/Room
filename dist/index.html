@@ -3,17 +3,27 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ROOM</title>
-  <script type="module" crossorigin src="/assets/index-ef3c8342.js"></script>
-  <link rel="stylesheet" href="/assets/index-8fb1c3a9.css">
+  <script type="module" crossorigin src="./assets/index-e3e61e7b.js"></script>
+  <link rel="stylesheet" href="./assets/index-915e9155.css">
 </head>
 
 <body class="body">
   <div class="wrapper">
     <header class="header">
+      <div class="header__contacts">
+        <p class="header__contacts__text">Contact Sales</p>
+        <a class="header__contacts__mobile" href="tel:+74952800487">TEL 646-791-3726</a>
+        <select class="header__contacts__language" name="" id="">
+          <option value="en">US</option>
+          <option value="ru">RU</option>
+        </select>
+      </div>
       <div class="header__container">
         <a class="header__logo" href="#">
           <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,7 +46,7 @@
           <a class="header__nav__link" href="#">Explore</a>
           <a class="header__nav__link" href="#">Shop</a>
         </nav>
-        <a class="header__rooms" href="#">
+        <div class="header__rooms" href="#">
           <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_2_191)">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -52,8 +62,20 @@
               </clipPath>
             </defs>
           </svg>
-          <p>Showrooms</p>
-        </a>
+          <select class="header__select">
+            <option>Showrooms </option>
+            <option value="US">United States </option>
+            <option value="London">London</option>
+            <option value="SF">San Francisco</option>
+            <option value="Paris">Paris</option>
+            <option value="Copenhagen">Copenhagen</option>
+            <option value="Zürich">Zürich</option>
+            <option value="LS">Los Angeles</option>
+            <option value="Berlin">Berlin</option>
+            <option value="Belgium">Belgium</option>
+            <option value="VD">Virtual Demo</option>
+          </select>
+        </div>
         <a class="header__basket" href="#">
           <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -72,7 +94,7 @@
 
     <section class="container promo__container">
       <picture>
-        <img src="/assets/placeholder-eb719306.jpg" width="100%" alt="">
+        <img src="./assets/placeholder-eb719306.jpg" width="100%" alt="">
       </picture>
       <div class="promo__content">
         <h1 class="promo__title">Design that inspires a better way to work.</h1>
@@ -82,34 +104,34 @@
     </section>
 
     <section class="container examples__container">
-      <a href="#"><img src="/assets/example-img1-da370852.jpg" alt=""> Phone Booth</a>
-      <a href="#"><img src="/assets/example-img2-78322bfc.jpg" alt=""> Focus Room</a>
-      <a href="#"><img src="/assets/example-img3-95ba8a7f.jpg" alt=""> Meeting Room</a>
-      <a href="#"><img src="/assets/example-img4-a17a5201.jpg" alt=""> Open Meeting Room</a>
+      <a href="#" data-aos="zoom-in-down"><img src="./assets/example-img1-da370852.jpg" alt=""> Phone Booth</a>
+      <a href="#" data-aos="zoom-in-down"><img src="./assets/example-img2-78322bfc.jpg" alt=""> Focus Room</a>
+      <a href="#" data-aos="zoom-in-down"><img src="./assets/example-img3-95ba8a7f.jpg" alt=""> Meeting Room</a>
+      <a href="#" data-aos="zoom-in-down"><img src="./assets/example-img4-a17a5201.jpg" alt=""> Open Meeting Room</a>
     </section>
 
     <section class="container brands__container">
       <h2 class="brands__title">The world's leading brands choose ROOM.</h2>
       <p class="brands__text">Over 3,000 and counting.</p>
       <div class="brands__grid">
-        <img src="/assets/nike-76a256f3.svg" alt="">
-        <img src="/assets/nasa-154efd21.svg" alt="">
-        <img src="/assets/google-526e4c98.svg" alt="">
-        <img src="/assets/uber-2e828f51.svg" alt="">
-        <img src="/assets/walmart-a368d7b6.svg" alt="">
-        <img src="/assets/salesForce-9b00fdae.svg" alt="">
-        <img src="/assets/hulu-4a3db86f.svg" alt="">
-        <img src="/assets/reddit-e15e9f57.svg" alt="">
-        <img src="/assets/knotel-4f0f3fe7.svg" alt="">
-        <img src="/assets/samsung-fd3248fe.svg" alt="">
-        <img src="/assets/amazon-2b3c5d94.svg" alt="">
-        <img src="/assets/angelList-1b034dba.svg" alt="">
-        <img src="/assets/buzzFeed-c8eb5f0c.svg" alt="">
-        <img src="/assets/apple-9ffa1681.svg" alt="">
-        <img src="/assets/harrys-7c2e9dab.svg" alt="">
-        <img src="/assets/asana-a7bab6cc.svg" alt="">
-        <img src="/assets/morgan-77c3fb7e.svg" alt="">
-        <img src="/assets/greenPeace-a01e2936.svg" alt="">
+        <img src="./assets/nike-76a256f3.svg" alt="">
+        <img src="./assets/nasa-154efd21.svg" alt="">
+        <img src="./assets/google-526e4c98.svg" alt="">
+        <img src="./assets/uber-2e828f51.svg" alt="">
+        <img src="./assets/walmart-a368d7b6.svg" alt="">
+        <img src="./assets/salesForce-9b00fdae.svg" alt="">
+        <img src="./assets/hulu-4a3db86f.svg" alt="">
+        <img src="./assets/reddit-e15e9f57.svg" alt="">
+        <img src="./assets/knotel-4f0f3fe7.svg" alt="">
+        <img src="./assets/samsung-fd3248fe.svg" alt="">
+        <img src="./assets/amazon-2b3c5d94.svg" alt="">
+        <img src="./assets/angelList-1b034dba.svg" alt="">
+        <img src="./assets/buzzFeed-c8eb5f0c.svg" alt="">
+        <img src="./assets/apple-9ffa1681.svg" alt="">
+        <img src="./assets/harrys-7c2e9dab.svg" alt="">
+        <img src="./assets/asana-a7bab6cc.svg" alt="">
+        <img src="./assets/morgan-77c3fb7e.svg" alt="">
+        <img src="./assets/greenPeace-a01e2936.svg" alt="">
       </div>
     </section>
 
@@ -117,13 +139,13 @@
       <div class="swiper swiper__slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="/assets/slide1-c5b81434.jpg" alt="">
+            <img src="./assets/slide1-c5b81434.jpg" alt="">
           </div>
           <div class="swiper-slide">
-            <img src="/assets/slide2-c85af02c.jpg" alt="">
+            <img src="./assets/slide2-c85af02c.jpg" alt="">
           </div>
           <div class="swiper-slide">
-            <img src="/assets/slide3-8beb6f59.jpg" alt="">
+            <img src="./assets/slide3-8beb6f59.jpg" alt="">
           </div>
         </div>
         <div class="swiper-pagination"></div>
@@ -138,21 +160,21 @@
       <a href="#"><button class="advantages__btn">GET IN TOUCH</button></a>
       <div class="advantages__grid">
         <div class="advantages__column">
-          <img src="/assets/advantages-img1-4f56fcaa.svg" alt="">
+          <img src="./assets/advantages-img1-4f56fcaa.svg" alt="">
           <p class="advantages__column__title">Cost-effective</p>
           <p class="advantages__column__text">At a fraction of the cost of traditional construction, our pre-fab
             solutions create additional space for
             focused work and collaboration without constant noise, debris and distraction.</p>
         </div>
         <div class="advantages__column">
-          <img src="/assets/advantages-img2-4f327632.svg" alt="">
+          <img src="./assets/advantages-img2-4f327632.svg" alt="">
           <p class="advantages__column__title">Time Saving</p>
           <p class="advantages__column__text">Thoughtful design ensures simple installation in a few hours or less. And,
             because our products are safety
             ensured, you'll never have to spend time or money chasing after permits, contractors, and more.</p>
         </div>
         <div class="advantages__column">
-          <img src="/assets/advantages-img3-e626e6ca.svg" alt="">
+          <img src="./assets/advantages-img3-e626e6ca.svg" alt="">
           <p class="advantages__column__title">Flexible</p>
           <p class="advantages__column__text">Unlike traditional construction, our purpose-built products were designed
             to adapt with your workspace and
@@ -165,15 +187,15 @@
       <div class="reviews__content">
         <p class="reviews__text">“We can now have <br> meetings in peace.”</p>
         <a href="#">
-          <img class="reviews__sites" src="/assets/google-f9f7aa94.svg" alt="">
+          <img class="reviews__sites" src="./assets/google-f9f7aa94.svg" alt="">
         </a>
         <p class="reviews__text">“Amazing private space <br> to get work done.”</p>
         <a href="#">
-          <img class="reviews__sites" src="/assets/wayfair-bcb74187.svg" alt="">
+          <img class="reviews__sites" src="./assets/wayfair-bcb74187.svg" alt="">
         </a>
         <p class="reviews__text">“Our booths are in <br> constant use.”</p>
         <a href="#">
-          <img class="reviews__sites" src="/assets/flexport-98a933e5.svg" alt="">
+          <img class="reviews__sites" src="./assets/flexport-98a933e5.svg" alt="">
         </a>
         <a class="reviews__more" href="#">READ MORE REVIEWS</a>
       </div>
@@ -184,15 +206,15 @@
         corporate and
         personal, and rethinking every step of the user experience along the way.</p>
       <h4 class="how__title">We make work, work for you.</h4>
-      <div class="how__box">
-        <img class="how__box__image" src="/assets/image1-1bd83840.jpg" alt="">
+      <div class="how__box" data-aos="fade-right">
+        <img class="how__box__image" src="./assets/image1-1bd83840.jpg" alt="">
         <div class="how__box__content">
           <p class="how__box__title">We sell direct.</p>
           <p class="how__box__text">We make extra room in the budget without compromising quality by selling direct. No
             middle man, and no additional construction required.</p>
         </div>
       </div>
-      <div class="how__box">
+      <div class="how__box" data-aos="fade-left">
         <div class="how__box__content">
           <p class="how__box__title">We build with purpose.</p>
           <p class="how__box__text">We’re not just building another room with four walls, we’re building a more
@@ -200,10 +222,10 @@
             workspace. We design with you in mind, looking at every detail as an opportunity to enable a better working
             environment for everyone.</p>
         </div>
-        <img class="how__box__image" src="/assets/image2-3bb3ea65.jpg" alt="">
+        <img class="how__box__image" src="./assets/image2-3bb3ea65.jpg" alt="">
       </div>
-      <div class="how__box">
-        <img class="how__box__image" src="/assets/image3-c19f27e3.jpg" alt="">
+      <div class="how__box" data-aos="fade-right">
+        <img class="how__box__image" src="./assets/image3-c19f27e3.jpg" alt="">
         <div class="how__box__content">
           <p class="how__box__title">We design sustainably.</p>
           <p class="how__box__text">From design to delivery, we strive to lessen our impact on the environment. Our
@@ -215,20 +237,20 @@
     </section>
 
     <section class="get">
-      <img class="get__image" src="/assets/image4-c1ba95a8.jpg" alt="">
+      <img class="get__image" data-aos="fade-up" data-aos-duration="2000" src="./assets/image4-c1ba95a8.jpg" alt="">
       <div class="get__container">
         <h5 class="get__title">100 day risk-free trial</h5>
         <div class="get__flexbox">
           <div class="get__column">
-            <img class="get__column__img" src="/assets/img1-799c147d.svg" alt="">
+            <img class="get__column__img" src="./assets/img1-799c147d.svg" alt="">
             <p class="get__column__text">FREE SHIPPING</p>
           </div>
           <div class="get__column">
-            <img class="get__column__img" src="/assets/img2-24cd4ac4.svg" alt="">
+            <img class="get__column__img" src="./assets/img2-24cd4ac4.svg" alt="">
             <p class="get__column__text">PLUG & PLAY</p>
           </div>
           <div class="get__column">
-            <img class="get__column__img" src="/assets/img3-5ee8edae.svg" alt="">
+            <img class="get__column__img" src="./assets/img3-5ee8edae.svg" alt="">
             <p class="get__column__text">FREE RETURNS</p>
           </div>
         </div>
@@ -299,27 +321,40 @@
         <div class="footer__social">
           <p>Follow us</p>
           <div class="footer__social__block">
-            <a href=""><img src="/assets/facebook-2a16ef43.svg" alt=""></a>
-            <a href=""><img src="/assets/instagram-c510bb3c.svg" alt=""></a>
-            <a href=""><img src="/assets/linkedin-4c015314.svg" alt=""></a>
-            <a href=""><img src="/assets/pinterest-2f9f9d0a.svg" alt=""></a>
+            <a href="#"><img src="./assets/facebook-2a16ef43.svg" alt=""></a>
+            <a href="#"><img src="./assets/instagram-c510bb3c.svg" alt=""></a>
+            <a href="#"><img src="./assets/linkedin-4c015314.svg" alt=""></a>
+            <a href="#"><img src="./assets/pinterest-2f9f9d0a.svg" alt=""></a>
           </div>
         </div>
         <form class="footer__form" action="">
           <p class="form__title">Join our mailing list</p>
           <p class="form__text">Be the first to hear everything about ROOM.</p>
           <label for="email">
-            <input class="form__mail" type="email">
+            <input class="form__mail" type="email" id="email">
           </label>
-          <button class="form__choice">United States </button>
-          <label for="custom__checkbox">
-            <input class="custom__checkbox" type="checkbox" name="checkbox" id="custom__checkbox" value="1">
-            Yes. I would like to receive marketing communications from ROOM about product updates and special offers.
-            Please refer to ROOM’s Privacy Policy for more information about how we process your data (including how to
-            unsubscribe).
-          </label>
-          <button class="form__btn">sign up</button>
+          <select name="select" class="form__select">
+            <option value="US">United States </option>
+            <option value="London">London</option>
+            <option value="SF">San Francisco</option>
+            <option value="Paris">Paris</option>
+            <option value="Copenhagen">Copenhagen</option>
+            <option value="Zürich">Zürich</option>
+            <option value="LS">Los Angeles</option>
+            <option value="Berlin">Berlin</option>
+            <option value="Belgium">Belgium</option>
+            <option value="VD">Virtual Demo</option>
+          </select>
+          <div class="form__check">
+            <input class="custom__checkbox" type="checkbox" name="form__checkbox" id="form__checkbox" value="1">
+            <label for="form__checkbox">Yes. I would like to receive marketing communications from ROOM about product
+              updates and special offers.
+              Please refer to ROOM’s Privacy Policy for more information about how we process your data (including how
+              to
+              unsubscribe).</label>
+          </div>
 
+          <button class="form__btn">sign up</button>
         </form>
       </div>
     </footer>
@@ -328,7 +363,7 @@
   </div>
 
   
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>
