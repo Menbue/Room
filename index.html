@@ -14,6 +14,14 @@
 <body class="body">
   <div class="wrapper">
     <header class="header">
+      <div class="header__contacts">
+        <p class="header__contacts__text">Contact Sales</p>
+        <a class="header__contacts__mobile" href="tel:+74952800487">TEL 646-791-3726</a>
+        <select class="header__contacts__language" name="" id="">
+          <option value="en">US</option>
+          <option value="ru">RU</option>
+        </select>
+      </div>
       <div class="header__container">
         <a class="header__logo" href="#">
           <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,7 +44,7 @@
           <a class="header__nav__link" href="#">Explore</a>
           <a class="header__nav__link" href="#">Shop</a>
         </nav>
-        <a class="header__rooms" href="#">
+        <div class="header__rooms" href="#">
           <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_2_191)">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -52,8 +60,20 @@
               </clipPath>
             </defs>
           </svg>
-          <p>Showrooms</p>
-        </a>
+          <select class="header__select">
+            <option>Showrooms </option>
+            <option value="US">United States </option>
+            <option value="London">London</option>
+            <option value="SF">San Francisco</option>
+            <option value="Paris">Paris</option>
+            <option value="Copenhagen">Copenhagen</option>
+            <option value="Zürich">Zürich</option>
+            <option value="LS">Los Angeles</option>
+            <option value="Berlin">Berlin</option>
+            <option value="Belgium">Belgium</option>
+            <option value="VD">Virtual Demo</option>
+          </select>
+        </div>
         <a class="header__basket" href="#">
           <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -311,7 +331,18 @@
           <label for="email">
             <input class="form__mail" type="email" id="email">
           </label>
-          <button class="form__choice">United States </button>
+          <select name="select" class="form__select">
+            <option value="US">United States </option>
+            <option value="London">London</option>
+            <option value="SF">San Francisco</option>
+            <option value="Paris">Paris</option>
+            <option value="Copenhagen">Copenhagen</option>
+            <option value="Zürich">Zürich</option>
+            <option value="LS">Los Angeles</option>
+            <option value="Berlin">Berlin</option>
+            <option value="Belgium">Belgium</option>
+            <option value="VD">Virtual Demo</option>
+          </select>
           <div class="form__check">
             <input class="custom__checkbox" type="checkbox" name="form__checkbox" id="form__checkbox" value="1">
             <label for="form__checkbox">Yes. I would like to receive marketing communications from ROOM about product
