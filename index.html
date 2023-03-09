@@ -11,7 +11,7 @@
   <title>ROOM</title>
 </head>
 
-<body class="body">
+<body class="body" id="body">
   <div class="wrapper">
     <header class="header">
       <div class="header__contacts">
@@ -39,40 +39,42 @@
               fill="black" />
           </svg>
         </a>
-        <nav class="header__nav">
-          <a class="header__nav__link" href="#">Products</a>
-          <a class="header__nav__link" href="#">Explore</a>
-          <a class="header__nav__link" href="#">Shop</a>
-        </nav>
-        <div class="header__rooms" href="#">
-          <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_2_191)">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M0.989563 9.1163C0.989563 4.0848 5.06298 0 10.0805 0C15.098 0 19.1714 4.0848 19.1714 9.1163C19.1714 12.7874 16.558 16.0916 14.3721 18.8531L10.5032 23.7875C10.2563 24.0381 9.9017 24.0993 9.66314 23.7941C9.24991 23.2667 8.83491 22.7227 8.41726 22.1752C7.55262 21.0419 6.67664 19.8936 5.78164 18.8465L5.78111 18.8459C3.59832 16.0844 0.989563 12.7841 0.989563 9.1163ZM18.1083 9.1163C18.1083 4.66637 14.518 1.06602 10.0805 1.06602C5.64293 1.06602 2.05261 4.66637 2.05261 9.1163C2.05261 12.4164 4.5344 15.5565 6.6107 18.1836L6.61151 18.1846C7.34004 19.1646 8.1177 20.1381 8.89153 21.1069C9.2913 21.6073 9.69005 22.1065 10.0805 22.6046L13.5435 18.1924L13.5451 18.1904C15.623 15.5623 18.1083 12.419 18.1083 9.1163Z"
-                fill="black" />
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M6 9.5003C6 7.01866 8.01806 5 10.4997 5C12.9813 5 15 7.01866 15 9.5003C15 11.982 12.9813 14 10.4997 14C8.01569 14 6 11.9843 6 9.5003ZM13.9487 9.5003C13.9487 7.59221 12.4078 6.05131 10.4997 6.05131C8.5922 6.05131 7.05131 7.59281 7.05131 9.5003C7.05131 11.4055 8.59457 12.9487 10.4997 12.9487C12.4072 12.9487 13.9487 11.4084 13.9487 9.5003Z"
-                fill="black" />
-            </g>
-            <defs>
-              <clipPath id="clip0_2_191">
-                <rect width="20" height="24" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-          <select class="header__select">
-            <option>Showrooms </option>
-            <option value="US">United States </option>
-            <option value="London">London</option>
-            <option value="SF">San Francisco</option>
-            <option value="Paris">Paris</option>
-            <option value="Copenhagen">Copenhagen</option>
-            <option value="Zürich">Zürich</option>
-            <option value="LS">Los Angeles</option>
-            <option value="Berlin">Berlin</option>
-            <option value="Belgium">Belgium</option>
-            <option value="VD">Virtual Demo</option>
-          </select>
+        <div class="header__menu">
+          <nav class="header__nav">
+            <a class="header__nav__link" href="#">Products</a>
+            <a class="header__nav__link" href="#">Explore</a>
+            <a class="header__nav__link" href="#">Shop</a>
+          </nav>
+          <div class="header__rooms" href="#">
+            <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_2_191)">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.989563 9.1163C0.989563 4.0848 5.06298 0 10.0805 0C15.098 0 19.1714 4.0848 19.1714 9.1163C19.1714 12.7874 16.558 16.0916 14.3721 18.8531L10.5032 23.7875C10.2563 24.0381 9.9017 24.0993 9.66314 23.7941C9.24991 23.2667 8.83491 22.7227 8.41726 22.1752C7.55262 21.0419 6.67664 19.8936 5.78164 18.8465L5.78111 18.8459C3.59832 16.0844 0.989563 12.7841 0.989563 9.1163ZM18.1083 9.1163C18.1083 4.66637 14.518 1.06602 10.0805 1.06602C5.64293 1.06602 2.05261 4.66637 2.05261 9.1163C2.05261 12.4164 4.5344 15.5565 6.6107 18.1836L6.61151 18.1846C7.34004 19.1646 8.1177 20.1381 8.89153 21.1069C9.2913 21.6073 9.69005 22.1065 10.0805 22.6046L13.5435 18.1924L13.5451 18.1904C15.623 15.5623 18.1083 12.419 18.1083 9.1163Z"
+                  fill="black" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6 9.5003C6 7.01866 8.01806 5 10.4997 5C12.9813 5 15 7.01866 15 9.5003C15 11.982 12.9813 14 10.4997 14C8.01569 14 6 11.9843 6 9.5003ZM13.9487 9.5003C13.9487 7.59221 12.4078 6.05131 10.4997 6.05131C8.5922 6.05131 7.05131 7.59281 7.05131 9.5003C7.05131 11.4055 8.59457 12.9487 10.4997 12.9487C12.4072 12.9487 13.9487 11.4084 13.9487 9.5003Z"
+                  fill="black" />
+              </g>
+              <defs>
+                <clipPath id="clip0_2_191">
+                  <rect width="20" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <select class="header__select">
+              <option>Showrooms</option>
+              <option value="US">United States </option>
+              <option value="London">London</option>
+              <option value="SF">San Francisco</option>
+              <option value="Paris">Paris</option>
+              <option value="Copenhagen">Copenhagen</option>
+              <option value="Zürich">Zürich</option>
+              <option value="LS">Los Angeles</option>
+              <option value="Berlin">Berlin</option>
+              <option value="Belgium">Belgium</option>
+              <option value="VD">Virtual Demo</option>
+            </select>
+          </div>
         </div>
         <a class="header__basket" href="#">
           <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -87,6 +89,9 @@
               fill="#1A1A1A" />
           </svg>
         </a>
+        <button class="header__burger" id="burger">
+          <span></span>
+        </button>
       </div>
     </header>
 
@@ -111,7 +116,7 @@
     <section class="container brands__container">
       <h2 class="brands__title">The world's leading brands choose ROOM.</h2>
       <p class="brands__text">Over 3,000 and counting.</p>
-      <div  class="brands__grid">
+      <div class="brands__grid">
         <img data-aos="zoom-in" src="public/img/brands/nike.svg" alt="">
         <img data-aos="zoom-in" src="public/img/brands/nasa.svg" alt="">
         <img data-aos="zoom-in" src="public/img/brands/google.svg" alt="">
