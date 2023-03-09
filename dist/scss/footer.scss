@@ -180,7 +180,6 @@ label {
         background-position: center center;
         background-size: 50% 50%;
     }
-
 }
 
 .form__btn {
@@ -222,9 +221,11 @@ label {
         width: 100%;
         text-align: center;
     }
-    .footer__logo{
+
+    .footer__logo {
         margin-right: 12%;
     }
+
     .footer__social {
         order: 1;
         margin-left: 14%;
@@ -232,5 +233,12 @@ label {
 
     .footer__form {
         order: 3;
+    }
+
+    .custom__checkbox+label {
+        &::before {
+            left: 0;
+            margin-top: 104px;
+        }
     }
 }
