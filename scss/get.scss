@@ -21,9 +21,9 @@
 
 .get__flexbox {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-end;
-    margin: 0 200px;
+    gap: 10px;
 }
 
 .get__column {
@@ -67,5 +67,12 @@
 @media (max-width: 991.99px){
     .get__image{
         margin: 20px 0 80px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .get__title{
+        font-size: 30px;
+        padding-top: 40px;
     }
 }

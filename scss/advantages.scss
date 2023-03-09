@@ -79,3 +79,17 @@
         text-align: center;
     }
 }
+
+@media (max-width: 767.98px) {
+    .advantages__container{
+        width: auto;
+    }
+    .advantages__title{
+        font-size: 30px;
+        line-height: 48px;
+        text-align: center;
+    }
+    .advantages__column__title{
+        margin: 10px 0 6px;
+    }
+}
