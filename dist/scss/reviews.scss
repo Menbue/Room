@@ -64,3 +64,15 @@
         padding-left: 60px;
     }
 }
+@media (max-width: 767.98px) {
+    .reviews__container {
+        margin: 70px 0;
+    }
+    .reviews__content{
+        padding-left: 20px;
+        padding-right: 130px;
+    }
+    .reviews__text{
+        font-size: 22px;
+    }
+}

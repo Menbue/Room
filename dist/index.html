@@ -9,11 +9,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ROOM</title>
-  <script type="module" crossorigin src="./assets/index-3ac29eed.js"></script>
-  <link rel="stylesheet" href="./assets/index-82790462.css">
+  <script type="module" crossorigin src="./assets/index-bdb3769c.js"></script>
+  <link rel="stylesheet" href="./assets/index-056abebc.css">
 </head>
 
-<body class="body">
+<body class="body" id="body">
   <div class="wrapper">
     <header class="header">
       <div class="header__contacts">
@@ -41,40 +41,42 @@
               fill="black" />
           </svg>
         </a>
-        <nav class="header__nav">
-          <a class="header__nav__link" href="#">Products</a>
-          <a class="header__nav__link" href="#">Explore</a>
-          <a class="header__nav__link" href="#">Shop</a>
-        </nav>
-        <div class="header__rooms" href="#">
-          <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_2_191)">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M0.989563 9.1163C0.989563 4.0848 5.06298 0 10.0805 0C15.098 0 19.1714 4.0848 19.1714 9.1163C19.1714 12.7874 16.558 16.0916 14.3721 18.8531L10.5032 23.7875C10.2563 24.0381 9.9017 24.0993 9.66314 23.7941C9.24991 23.2667 8.83491 22.7227 8.41726 22.1752C7.55262 21.0419 6.67664 19.8936 5.78164 18.8465L5.78111 18.8459C3.59832 16.0844 0.989563 12.7841 0.989563 9.1163ZM18.1083 9.1163C18.1083 4.66637 14.518 1.06602 10.0805 1.06602C5.64293 1.06602 2.05261 4.66637 2.05261 9.1163C2.05261 12.4164 4.5344 15.5565 6.6107 18.1836L6.61151 18.1846C7.34004 19.1646 8.1177 20.1381 8.89153 21.1069C9.2913 21.6073 9.69005 22.1065 10.0805 22.6046L13.5435 18.1924L13.5451 18.1904C15.623 15.5623 18.1083 12.419 18.1083 9.1163Z"
-                fill="black" />
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M6 9.5003C6 7.01866 8.01806 5 10.4997 5C12.9813 5 15 7.01866 15 9.5003C15 11.982 12.9813 14 10.4997 14C8.01569 14 6 11.9843 6 9.5003ZM13.9487 9.5003C13.9487 7.59221 12.4078 6.05131 10.4997 6.05131C8.5922 6.05131 7.05131 7.59281 7.05131 9.5003C7.05131 11.4055 8.59457 12.9487 10.4997 12.9487C12.4072 12.9487 13.9487 11.4084 13.9487 9.5003Z"
-                fill="black" />
-            </g>
-            <defs>
-              <clipPath id="clip0_2_191">
-                <rect width="20" height="24" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-          <select class="header__select">
-            <option>Showrooms </option>
-            <option value="US">United States </option>
-            <option value="London">London</option>
-            <option value="SF">San Francisco</option>
-            <option value="Paris">Paris</option>
-            <option value="Copenhagen">Copenhagen</option>
-            <option value="Zürich">Zürich</option>
-            <option value="LS">Los Angeles</option>
-            <option value="Berlin">Berlin</option>
-            <option value="Belgium">Belgium</option>
-            <option value="VD">Virtual Demo</option>
-          </select>
+        <div class="header__menu">
+          <nav class="header__nav">
+            <a class="header__nav__link" href="#">Products</a>
+            <a class="header__nav__link" href="#">Explore</a>
+            <a class="header__nav__link" href="#">Shop</a>
+          </nav>
+          <div class="header__rooms" href="#">
+            <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_2_191)">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.989563 9.1163C0.989563 4.0848 5.06298 0 10.0805 0C15.098 0 19.1714 4.0848 19.1714 9.1163C19.1714 12.7874 16.558 16.0916 14.3721 18.8531L10.5032 23.7875C10.2563 24.0381 9.9017 24.0993 9.66314 23.7941C9.24991 23.2667 8.83491 22.7227 8.41726 22.1752C7.55262 21.0419 6.67664 19.8936 5.78164 18.8465L5.78111 18.8459C3.59832 16.0844 0.989563 12.7841 0.989563 9.1163ZM18.1083 9.1163C18.1083 4.66637 14.518 1.06602 10.0805 1.06602C5.64293 1.06602 2.05261 4.66637 2.05261 9.1163C2.05261 12.4164 4.5344 15.5565 6.6107 18.1836L6.61151 18.1846C7.34004 19.1646 8.1177 20.1381 8.89153 21.1069C9.2913 21.6073 9.69005 22.1065 10.0805 22.6046L13.5435 18.1924L13.5451 18.1904C15.623 15.5623 18.1083 12.419 18.1083 9.1163Z"
+                  fill="black" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6 9.5003C6 7.01866 8.01806 5 10.4997 5C12.9813 5 15 7.01866 15 9.5003C15 11.982 12.9813 14 10.4997 14C8.01569 14 6 11.9843 6 9.5003ZM13.9487 9.5003C13.9487 7.59221 12.4078 6.05131 10.4997 6.05131C8.5922 6.05131 7.05131 7.59281 7.05131 9.5003C7.05131 11.4055 8.59457 12.9487 10.4997 12.9487C12.4072 12.9487 13.9487 11.4084 13.9487 9.5003Z"
+                  fill="black" />
+              </g>
+              <defs>
+                <clipPath id="clip0_2_191">
+                  <rect width="20" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <select class="header__select">
+              <option>Showrooms</option>
+              <option value="US">United States </option>
+              <option value="London">London</option>
+              <option value="SF">San Francisco</option>
+              <option value="Paris">Paris</option>
+              <option value="Copenhagen">Copenhagen</option>
+              <option value="Zürich">Zürich</option>
+              <option value="LS">Los Angeles</option>
+              <option value="Berlin">Berlin</option>
+              <option value="Belgium">Belgium</option>
+              <option value="VD">Virtual Demo</option>
+            </select>
+          </div>
         </div>
         <a class="header__basket" href="#">
           <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -89,6 +91,9 @@
               fill="#1A1A1A" />
           </svg>
         </a>
+        <button class="header__burger" id="burger">
+          <span></span>
+        </button>
       </div>
     </header>
 
@@ -113,7 +118,7 @@
     <section class="container brands__container">
       <h2 class="brands__title">The world's leading brands choose ROOM.</h2>
       <p class="brands__text">Over 3,000 and counting.</p>
-      <div  class="brands__grid">
+      <div class="brands__grid">
         <img data-aos="zoom-in" src="./assets/nike-76a256f3.svg" alt="">
         <img data-aos="zoom-in" src="./assets/nasa-154efd21.svg" alt="">
         <img data-aos="zoom-in" src="./assets/google-526e4c98.svg" alt="">
@@ -160,21 +165,21 @@
       <a href="#"><button class="advantages__btn">GET IN TOUCH</button></a>
       <div class="advantages__grid">
         <div class="advantages__column">
-          <img src="./assets/advantages-img1-4f56fcaa.svg" alt="">
+          <img class="advantages__column__img" src="./assets/advantages-img1-4f56fcaa.svg" alt="">
           <p class="advantages__column__title">Cost-effective</p>
           <p class="advantages__column__text">At a fraction of the cost of traditional construction, our pre-fab
             solutions create additional space for
             focused work and collaboration without constant noise, debris and distraction.</p>
         </div>
         <div class="advantages__column">
-          <img src="./assets/advantages-img2-4f327632.svg" alt="">
+          <img class="advantages__column__img" src="./assets/advantages-img2-4f327632.svg" alt="">
           <p class="advantages__column__title">Time Saving</p>
           <p class="advantages__column__text">Thoughtful design ensures simple installation in a few hours or less. And,
             because our products are safety
             ensured, you'll never have to spend time or money chasing after permits, contractors, and more.</p>
         </div>
         <div class="advantages__column">
-          <img src="./assets/advantages-img3-e626e6ca.svg" alt="">
+          <img class="advantages__column__img" src="./assets/advantages-img3-e626e6ca.svg" alt="">
           <p class="advantages__column__title">Flexible</p>
           <p class="advantages__column__text">Unlike traditional construction, our purpose-built products were designed
             to adapt with your workspace and

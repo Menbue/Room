@@ -201,10 +201,36 @@ label {
 }
 
 @media (max-width: 991.99px) {
-    .footer__container{
+    .footer__container {
         display: grid;
         grid-template-columns: 100px 400px;
         gap: 20px;
         justify-content: center;
+    }
+
+}
+
+@media (max-width: 550.98px) {
+    .footer__container {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .footer__grid {
+        order: 2;
+        width: 100%;
+        text-align: center;
+    }
+    .footer__logo{
+        margin-right: 12%;
+    }
+    .footer__social {
+        order: 1;
+        margin-left: 14%;
+    }
+
+    .footer__form {
+        order: 3;
     }
 }

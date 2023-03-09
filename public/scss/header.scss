@@ -62,19 +62,44 @@
     line-height: 14px;
     width: 100%;
     max-width: 100%;
+    position: fixed;
+    z-index: 0;
+    background-color: #ffffff;
+    z-index: 3;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        z-index: 2;
+    }
 }
 
 .header__logo {
     margin-left: 120px;
     transition: all .2s linear;
+    z-index: 2;
 
     &:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
+}
+
+.header__menu {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-grow: 1;
+    z-index: 2;
 }
 
 .header__nav__link {
     transition: all .2s linear;
+    margin-right: 100px;
 
     &:hover {
         transform: scale(1.1);
@@ -87,17 +112,12 @@
     text-decoration: none;
     color: #000;
     text-transform: uppercase;
-
 }
 
 .header__nav {
     display: flex;
     justify-content: center;
     flex-grow: 1;
-
-    & :nth-child(2) {
-        margin: 0 120px 0 100px;
-    }
 }
 
 .header__select {
@@ -117,13 +137,13 @@
 
     &:hover {
         color: $second;
-
     }
 }
 
 .header__rooms {
     display: flex;
     flex-direction: row;
+    align-self: end;
     align-items: center;
 
     & :first-child {
@@ -133,22 +153,139 @@
 
 .header__basket {
     margin: 0 40px 0 46px;
+    z-index: 2;
+}
+
+.header__burger {
+    display: none;
+    border: none;
+    background-color: transparent;
 }
 
 @media (max-width: 991.99px) {
-    .header__nav{
-        margin-right: 20px;
+    .header__nav {
         margin-left: 20px;
-        
     }
-    .header__nav :nth-child(2) {
-        margin: 0 50px;
+
+    .header__nav__link {
+        margin-right: 50px;
     }
-    .header__logo{
+
+    .header__logo {
         margin-left: 50px;
     }
 }
 
 @media (max-width: 767.98px) {
 
+    .header__contacts__text,
+    .header__contacts__mobile,
+    .header__contacts__language {
+        margin: 0 9px;
+    }
+
+    .header__container {
+        justify-content: flex-end;
+        padding: 46px 0 4px;
+    }
+
+    .header__menu {
+        order: 2;
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: -150px;
+        flex-grow: 0;
+        flex-direction: column;
+        border: 1px solid #000;
+        background-color: #ffffff;
+        padding: 20px;
+        transition: all .4s linear;
+    }
+
+    .menu-open{
+        & .header__burger{
+            & span{
+                background-color: transparent;
+            }
+            &::before {
+                transform: rotate(45grad);
+                margin-top: 9px;
+            }
+            &::after {
+                margin-bottom: 9px;
+                transform: rotate(-45grad);
+            }
+        }
+        & .header__menu{
+            top: 104px;
+        margin-top: 0;
+
+        }
+    }
+
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        margin-right: 20px;
+        z-index: 3;
+        transition: all 1s linear;
+
+        & span {
+            position: absolute;
+            background-color: $primary;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            top: 9px;
+        transition: all .3s linear;
+
+        }
+
+        &::before,
+        &::after {
+            content: '';
+            background-color: $primary;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+        transition: all .5s linear;
+
+        }
+
+        &::before {
+            top: 0;
+        }
+
+        &::after {
+            bottom: 0;
+        }
+    }
+
+    .header__logo {
+        margin-left: 20px;
+        margin-right: auto;
+    }
+
+    .header__nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header__nav__link {
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .header__rooms {
+        padding: 10px;
+    }
+
+    .header__basket {
+        margin: 0 20px;
+    }
 }
